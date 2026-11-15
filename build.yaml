@@ -1,0 +1,9 @@
+---
+include:
+  - board: nice_nano//zmk
+    shield: charybdis_nano_left
+  - board: nice_nano//zmk
+    shield: charybdis_nano_right
+    snippet: zmk-usb-logging
+  - board: nice_nano//zmk
+    shield: settings_reset

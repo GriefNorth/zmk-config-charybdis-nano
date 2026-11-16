@@ -49,8 +49,8 @@
 
 &zip_temp_layer {
     require-prior-idle-ms = <200>;
-    // H J K L on MOUSE layer
-    excluded-positions = <15 16 17 18>;
+    // S D F (mouse buttons) + G (scroll) on MOUSE layer
+    excluded-positions = <11 12 13 14>;
 };
 
 / {

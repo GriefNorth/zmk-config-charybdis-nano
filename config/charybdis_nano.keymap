@@ -36,6 +36,7 @@
         Tab {
             bindings = <&kp TAB>;
             key-positions = <10 11>;
+            layers = <0 1 2 3 4>;
         };
     };
 

@@ -47,17 +47,12 @@
     };
 };
 
-&zip_temp_layer {
-    require-prior-idle-ms = <400>;
-    // S D F (mouse buttons) + G (scroll) on MOUSE layer
-    excluded-positions = <11 12 13 14>;
-};
-
 / {
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&zip_xy_scaler 5 5 &zip_temp_layer 6 1200>;
+        // cursor blocked unless MOUSE layer (hold A) is active
+        input-processors = <&zip_xy_scaler 0 1>;
 
         scroller {
             layers = <7>;
@@ -66,6 +61,11 @@
                 &zip_xy_to_scroll_mapper
                 &zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)
             >;
+        };
+
+        mouse {
+            layers = <6>;
+            input-processors = <&zip_xy_scaler 5 5>;
         };
     };
 };

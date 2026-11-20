@@ -20,8 +20,8 @@ Based on [zmk-config-skeletyl-dartyl](../zmk-config-skeletyl-dartyl), trackball 
 
 Keymap from skeletyl, changes:
 - right thumbs: `ENTER`, `mo 2`; RGUI on LOWER dropped
-- `MOUSE` (6): auto-activates on trackball move (timeout 1200ms, not within 400ms after typing); `F/D/S` = left/right/middle click, hold `G` = scroll
+- `MOUSE` (6): active while holding `A` (cursor moves only then); `F/D/S` = left/right/middle click, hold `G` = scroll
 - `SCROLL` (7): trackball scrolls
 
 Tuning: `config/boards/shields/charybdis_nano/charybdis_nano_pmw3610.dtsi`
-(`cpi`, `zip_xy_scaler`, axis `swap-xy`/`invert-*`, auto-mouse timeout, `require-prior-idle-ms`).
+(`cpi`, `zip_xy_scaler`, axis `swap-xy`/`invert-*`).

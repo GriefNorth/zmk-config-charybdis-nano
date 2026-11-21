@@ -108,10 +108,10 @@
         MOUSE {
             label = "MOUSE";
             bindings = <
-&trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &mkp MCLK  &mkp RCLK  &mkp LCLK  &mo 7     &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans
-                   &trans     &trans     &trans    &trans  &trans
+&trans  &trans     &trans     &trans     &trans    &trans             &trans           &trans  &trans  &trans
+&trans  &mkp MCLK  &mkp RCLK  &mkp LCLK  &mo 7     &trans             &trans           &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &trans    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans  &trans
+                   &trans     &trans     &trans    &trans             &trans
             >;
         };
 
